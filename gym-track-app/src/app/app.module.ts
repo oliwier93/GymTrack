@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SharedModule } from './shared/shared.module';
+import { AddActivityModule } from './features/add-activity/add-activity.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { environment } from '../environments/environment';
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    SharedModule,
+    AddActivityModule
   ],
   providers: [],
   bootstrap: [AppComponent]

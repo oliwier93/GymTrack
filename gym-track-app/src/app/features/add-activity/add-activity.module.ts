@@ -10,6 +10,9 @@ import { AddActivityComponent } from './add-activity.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    AddActivityComponent
   ]
 })
 export class AddActivityModule { }
