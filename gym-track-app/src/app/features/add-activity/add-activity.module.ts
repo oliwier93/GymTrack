@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AddActivityComponent } from './add-activity.component';
-
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -9,7 +9,8 @@ import { AddActivityComponent } from './add-activity.component';
     AddActivityComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatSelectModule
   ],
   exports: [
     AddActivityComponent

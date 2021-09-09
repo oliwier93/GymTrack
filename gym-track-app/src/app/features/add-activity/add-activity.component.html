@@ -1,1 +1,16 @@
-<p>add-activity works!</p>
+<mat-form-field appearance="fill">
+  <mat-label>Category</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let category of categories" [value]="category.value">
+      {{category.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+<mat-form-field appearance="fill">
+  <mat-label>Body part</mat-label>
+  <mat-select>
+    <mat-option *ngFor="let bodyPart of bodyParts" [value]="bodyPart.value">
+      {{bodyPart.viewValue}}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
