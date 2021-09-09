@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-add-activity',
+  selector: 'gta-add-activity',
   templateUrl: './add-activity.component.html',
   styleUrls: ['./add-activity.component.scss']
 })
