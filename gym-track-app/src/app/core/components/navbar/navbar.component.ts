@@ -4,6 +4,7 @@ interface MenuElement {
   value: string;
   viewValue: string;
   icon: string;
+  isVisible: boolean;
 }
 
 @Component({
@@ -13,11 +14,11 @@ interface MenuElement {
 })
 export class NavbarComponent implements OnInit {
   menuElements: MenuElement[] = [
-    {value: 'profile', viewValue: 'Profile', icon:'person'},
-    {value: 'history', viewValue: 'History', icon:'history'},
-    {value: 'add-workout', viewValue: 'Add Workout', icon:'add'},
-    {value: 'exercises', viewValue: 'Exercises', icon:'fitness_center'},
-    {value: 'upgrade', viewValue: 'Upgrade', icon:'auto_awesome'}
+    {value: 'profile', viewValue: 'Profile', icon:'person', isVisible: true},
+    {value: 'history', viewValue: 'History', icon:'history', isVisible: true},
+    {value: 'add-workout', viewValue: 'Add Workout', icon:'add', isVisible: true},
+    {value: 'exercises', viewValue: 'Exercises', icon:'fitness_center', isVisible: true},
+    {value: 'upgrade', viewValue: 'Upgrade', icon:'auto_awesome', isVisible: true},
   ]
 
   constructor() { }

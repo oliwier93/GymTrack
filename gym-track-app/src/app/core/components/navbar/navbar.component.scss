@@ -1,4 +1,11 @@
+mat-toolbar {
+  position:absolute;
+  bottom:0;
+  padding-left: 0;
+}
+
 button {
   border-radius: 0;
   height: 100%;
+  width: 20vw;
 }
