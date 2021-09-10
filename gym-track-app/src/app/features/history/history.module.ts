@@ -1,15 +1,23 @@
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF, CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { HistoryComponent } from './history.component';
+import { TitleBarComponent } from './components/title-bar/title-bar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
 
 
 
 @NgModule({
   declarations: [
-    HistoryComponent
+    HistoryComponent,
+    TitleBarComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   exports: [
     HistoryComponent
