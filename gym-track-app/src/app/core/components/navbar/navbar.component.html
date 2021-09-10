@@ -5,7 +5,9 @@
   *ngFor="let menuElement of menuElements" 
   [value]="menuElement.value"
   >
-  <mat-icon>{{menuElement.icon}}</mat-icon>
+  <mat-icon>
+    {{menuElement.icon}}
+  </mat-icon>
   {{menuElement.viewValue}}
   </button>
 </mat-toolbar>

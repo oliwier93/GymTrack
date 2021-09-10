@@ -14,6 +14,10 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { ProfileModule } from './features/profile/profile.module';
+import { HistoryModule } from './features/history/history.module';
+import { ExercisesModule } from './features/exercises/exercises.module';
+import { UpgradeModule } from './features/upgrade/upgrade.module';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatButtonModule,
     MatToolbarModule,
     SharedModule,
-    AddActivityModule
+    AddActivityModule,
+    ProfileModule,
+    HistoryModule,
+    ExercisesModule,
+    UpgradeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -10,6 +10,9 @@ import { UpgradeComponent } from './upgrade.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    UpgradeComponent
   ]
 })
 export class UpgradeModule { }

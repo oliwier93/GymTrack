@@ -10,6 +10,9 @@ import { ExercisesComponent } from './exercises.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    ExercisesComponent
   ]
 })
 export class ExercisesModule { }
