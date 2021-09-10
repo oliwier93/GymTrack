@@ -16,4 +16,4 @@ import { MatSelectModule } from '@angular/material/select';
     AddWorkoutComponent
   ]
 })
-export class AddActivityModule { }
+export class AddWorkoutModule { }
