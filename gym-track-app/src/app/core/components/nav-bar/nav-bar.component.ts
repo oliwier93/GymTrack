@@ -9,11 +9,11 @@ interface MenuElement {
 }
 
 @Component({
-  selector: 'gta-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.scss']
+  selector: 'gta-nav-bar',
+  templateUrl: './nav-bar.component.html',
+  styleUrls: ['./nav-bar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavBarComponent implements OnInit {
   menuElements: MenuElement[] = [
     {value: 'profile', viewValue: 'Profile', icon:'person', isVisible: true},
     {value: 'history', viewValue: 'History', icon:'history', isVisible: true},

@@ -8,7 +8,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 
-import { NavbarComponent } from './core/components/navbar/navbar.component';
+import { NavBarComponent } from './core/components/nav-bar/nav-bar.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -24,7 +24,7 @@ import { APP_BASE_HREF } from '@angular/common';
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
+    NavBarComponent,
     PageNotFoundComponent
   ],
   imports: [
