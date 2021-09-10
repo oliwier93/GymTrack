@@ -19,6 +19,7 @@ import { UpgradeModule } from './features/upgrade/upgrade.module';
 import { AddWorkoutModule } from './features/add-workout/add-workout.module';
 import { ProfileModule } from './features/profile/profile.module';
 import { HistoryModule } from './features/history/history.module';
+import { APP_BASE_HREF } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,9 @@ import { HistoryModule } from './features/history/history.module';
     ExercisesModule,
     UpgradeModule
   ],
-  providers: [],
+  providers: [
+    {provide: APP_BASE_HREF, useValue: '/app'}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

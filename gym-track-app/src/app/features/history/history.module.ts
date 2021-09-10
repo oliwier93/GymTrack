@@ -13,8 +13,6 @@ import { HistoryComponent } from './history.component';
   ],
   exports: [
     HistoryComponent
-  ],
-  providers: [
   ]
 })
 export class HistoryModule { }
