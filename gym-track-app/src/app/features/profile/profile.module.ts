@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { APP_BASE_HREF, CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { ProfileComponent } from './profile.component';
 
 
@@ -13,6 +13,8 @@ import { ProfileComponent } from './profile.component';
   ],
   exports: [
     ProfileComponent
+  ],
+  providers: [
   ]
 })
 export class ProfileModule { }

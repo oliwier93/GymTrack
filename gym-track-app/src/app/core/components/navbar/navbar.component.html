@@ -4,6 +4,7 @@
   color="primary"
   *ngFor="let menuElement of menuElements" 
   [value]="menuElement.value"
+  [routerLink]="menuElement.routerLink"
   >
   <mat-icon>
     {{menuElement.icon}}

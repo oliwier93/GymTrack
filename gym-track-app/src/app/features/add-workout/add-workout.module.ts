@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AddActivityComponent } from './add-activity.component';
+import { AddWorkoutComponent } from './add-workout.component';
 import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
   declarations: [
-    AddActivityComponent
+    AddWorkoutComponent
   ],
   imports: [
     CommonModule,
     MatSelectModule
   ],
   exports: [
-    AddActivityComponent
+    AddWorkoutComponent
   ]
 })
 export class AddActivityModule { }

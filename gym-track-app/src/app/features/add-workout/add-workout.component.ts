@@ -11,11 +11,11 @@ interface BodyPart {
 }
 
 @Component({
-  selector: 'gta-add-activity',
-  templateUrl: './add-activity.component.html',
-  styleUrls: ['./add-activity.component.scss']
+  selector: 'gta-add-workout',
+  templateUrl: './add-workout.component.html',
+  styleUrls: ['./add-workout.component.scss']
 })
-export class AddActivityComponent implements OnInit {
+export class AddWorkoutComponent implements OnInit {
   categories: Category[] = [
     {value: 'barbell', viewValue: 'Barbell'},
     {value: 'cardio', viewValue: 'Cardio'}

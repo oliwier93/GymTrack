@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { APP_BASE_HREF, CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HistoryComponent } from './history.component';
 
 
@@ -13,6 +13,8 @@ import { HistoryComponent } from './history.component';
   ],
   exports: [
     HistoryComponent
+  ],
+  providers: [
   ]
 })
 export class HistoryModule { }

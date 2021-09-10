@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
-import { AddActivityModule } from './features/add-activity/add-activity.module';
+import { AddActivityModule } from './features/add-workout/add-workout.module';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { MatIconModule } from '@angular/material/icon';
