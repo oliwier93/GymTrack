@@ -11,6 +11,9 @@ import { AddActivityModule } from './features/add-activity/add-activity.module';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -29,6 +32,9 @@ import { PageNotFoundComponent } from './core/components/page-not-found/page-not
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
     }),
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
     SharedModule,
     AddActivityModule
   ],
