@@ -20,12 +20,14 @@ import { AddWorkoutModule } from './features/add-workout/add-workout.module';
 import { ProfileModule } from './features/profile/profile.module';
 import { HistoryModule } from './features/history/history.module';
 import { APP_BASE_HREF } from '@angular/common';
+import { TitleBarComponent } from './core/components/title-bar/title-bar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    TitleBarComponent
   ],
   imports: [
     BrowserModule,
