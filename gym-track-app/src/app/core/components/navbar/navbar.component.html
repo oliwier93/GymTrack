@@ -1,0 +1,15 @@
+<mat-toolbar color="primary">
+  <button 
+  mat-flat-button
+  color="primary"
+  *ngFor="let menuElement of menuElements" 
+  [value]="menuElement.value"
+  [routerLink]="menuElement.routerLink"
+  >
+  <mat-icon>
+    {{menuElement.icon}}
+  </mat-icon>
+  {{menuElement.viewValue}}
+  </button>
+</mat-toolbar>
+

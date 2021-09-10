@@ -6,10 +6,23 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SharedModule } from './shared/shared.module';
+import { AddActivityModule } from './features/add-workout/add-workout.module';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
+import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { ProfileModule } from './features/profile/profile.module';
+import { HistoryModule } from './features/history/history.module';
+import { ExercisesModule } from './features/exercises/exercises.module';
+import { UpgradeModule } from './features/upgrade/upgrade.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +33,16 @@ import { environment } from '../environments/environment';
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    MatIconModule,
+    MatButtonModule,
+    MatToolbarModule,
+    SharedModule,
+    AddActivityModule,
+    ProfileModule,
+    HistoryModule,
+    ExercisesModule,
+    UpgradeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
