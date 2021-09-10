@@ -1,11 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface MenuElement {
-  value: string;
-  viewValue: string;
-  icon: string;
-  isVisible: boolean;
-}
+import { MenuElement } from '../../models/menu-element-interface';
 
 @Component({
   selector: 'gta-title-bar',
@@ -14,8 +8,8 @@ interface MenuElement {
 })
 export class TitleBarComponent implements OnInit {
   menuElements: MenuElement[] = [
-    {value: 'measurements', viewValue: 'Measurements', icon:'straighten', isVisible: true},
-    {value: 'settings', viewValue: 'Settings', icon:'settings', isVisible: true}
+    {value: 'measurements', icon:'straighten'},
+    {value: 'settings', icon:'settings'}
   ]
 
   constructor() { }

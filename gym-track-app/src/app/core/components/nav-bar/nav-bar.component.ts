@@ -1,12 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
-interface MenuElement {
-  value: string;
-  viewValue: string;
-  icon: string;
-  isVisible: boolean;
-}
+import { MenuElement } from '../../models/menu-element-interface';
 
 @Component({
   selector: 'gta-nav-bar',
@@ -15,11 +10,11 @@ interface MenuElement {
 })
 export class NavBarComponent implements OnInit {
   menuElements: MenuElement[] = [
-    {value: 'profile', viewValue: 'Profile', icon:'person', isVisible: true},
-    {value: 'history', viewValue: 'History', icon:'history', isVisible: true},
-    {value: 'add-workout', viewValue: 'Add Workout', icon:'add', isVisible: true},
-    {value: 'exercises', viewValue: 'Exercises', icon:'fitness_center', isVisible: true},
-    {value: 'upgrade', viewValue: 'Upgrade', icon:'auto_awesome', isVisible: true},
+    {value: 'profile', viewValue: 'Profile', icon:'person'},
+    {value: 'history', viewValue: 'History', icon:'history'},
+    {value: 'add-workout', viewValue: 'Add Workout', icon:'add'},
+    {value: 'exercises', viewValue: 'Exercises', icon:'fitness_center'},
+    {value: 'upgrade', viewValue: 'Upgrade', icon:'auto_awesome'},
   ]
 
   constructor(private router: Router) { }
