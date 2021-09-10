@@ -8,10 +8,16 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { AddActivityModule } from './features/add-activity/add-activity.module';
+import { NavbarComponent } from './core/components/navbar/navbar.component';
+import { FooterComponent } from './core/components/footer/footer.component';
+import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    FooterComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
