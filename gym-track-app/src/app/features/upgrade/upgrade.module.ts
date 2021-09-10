@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UpgradeComponent } from './upgrade.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 
@@ -9,7 +10,8 @@ import { UpgradeComponent } from './upgrade.component';
     UpgradeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule
   ],
   exports: [
     UpgradeComponent

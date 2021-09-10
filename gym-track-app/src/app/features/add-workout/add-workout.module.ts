@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AddWorkoutComponent } from './add-workout.component';
 import { MatSelectModule } from '@angular/material/select';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 
 @NgModule({
@@ -10,7 +11,7 @@ import { MatSelectModule } from '@angular/material/select';
   ],
   imports: [
     CommonModule,
-    MatSelectModule
+    SharedModule
   ],
   exports: [
     AddWorkoutComponent

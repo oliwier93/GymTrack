@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuElement } from 'src/app/core/models/menu-element-interface';
 
 @Component({
   selector: 'gta-history',
@@ -6,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./history.component.scss']
 })
 export class HistoryComponent implements OnInit {
+  menuElements: MenuElement[] = [
+    {value: 'calendar', icon:'date_range'}
+  ];
+  title: string = 'History';
 
   constructor() { }
 

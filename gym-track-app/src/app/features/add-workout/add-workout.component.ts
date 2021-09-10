@@ -1,14 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-interface Category {
-  value: string;
-  viewValue: string;
-}
-
-interface BodyPart {
-  value: string;
-  viewValue: string;
-}
+import { MenuElement } from 'src/app/core/models/menu-element-interface';
 
 @Component({
   selector: 'gta-add-workout',
@@ -16,15 +7,11 @@ interface BodyPart {
   styleUrls: ['./add-workout.component.scss']
 })
 export class AddWorkoutComponent implements OnInit {
-  categories: Category[] = [
-    {value: 'barbell', viewValue: 'Barbell'},
-    {value: 'cardio', viewValue: 'Cardio'}
-  ]
+  menuElements: MenuElement[] = [
+    {value: 'add', icon:'add'}
+  ];
+  title: string = 'Workout';
 
-  bodyParts: BodyPart[] = [
-    {value: 'core', viewValue: 'Core'},
-    {value: 'cardio', viewValue: 'Cardio'}
-  ]
 
   constructor() { }
 

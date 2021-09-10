@@ -1,23 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile.component';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { TitleBarComponent } from './components/title-bar/title-bar.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+
 
 
 
 @NgModule({
   declarations: [
     ProfileComponent,
-    TitleBarComponent
   ],
   imports: [
     CommonModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
+    SharedModule
   ],
   exports: [
     ProfileComponent
