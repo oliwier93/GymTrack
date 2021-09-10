@@ -4,12 +4,14 @@ import { ProfileComponent } from './profile.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { TitleBarComponent } from './components/title-bar/title-bar.component';
 
 
 
 @NgModule({
   declarations: [
-    ProfileComponent
+    ProfileComponent,
+    TitleBarComponent
   ],
   imports: [
     CommonModule,

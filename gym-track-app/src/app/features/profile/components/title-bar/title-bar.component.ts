@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MenuElement } from '../../models/menu-element-interface';
+import { MenuElement } from 'src/app/core/models/menu-element-interface';
 
 @Component({
   selector: 'gta-title-bar',
