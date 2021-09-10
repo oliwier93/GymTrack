@@ -9,7 +9,6 @@ import { environment } from '../environments/environment';
 import { SharedModule } from './shared/shared.module';
 import { AddActivityModule } from './features/add-activity/add-activity.module';
 import { NavbarComponent } from './core/components/navbar/navbar.component';
-import { FooterComponent } from './core/components/footer/footer.component';
 import { PageNotFoundComponent } from './core/components/page-not-found/page-not-found.component';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
@@ -23,7 +22,6 @@ import { UpgradeModule } from './features/upgrade/upgrade.module';
   declarations: [
     AppComponent,
     NavbarComponent,
-    FooterComponent,
     PageNotFoundComponent
   ],
   imports: [
