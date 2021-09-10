@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { APP_BASE_HREF, CommonModule, HashLocationStrategy, LocationStrategy } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './profile.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
