@@ -10,7 +10,7 @@ export class UpgradeComponent implements OnInit {
   menuElements: MenuElement[] = [
     {value: 'redeem', icon:'redeem'}
   ];
-  title: string = 'History';
+  title: string = 'Upgrade';
 
   constructor() { }
 
